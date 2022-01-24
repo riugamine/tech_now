@@ -1,0 +1,1 @@
+web: gunicorn tech_now.wsgi --log-file-
