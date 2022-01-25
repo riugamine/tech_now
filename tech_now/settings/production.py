@@ -18,7 +18,7 @@ COMPRESS_CSS_FILTERS = [
 COMPRESS_CSS_HASHING_METHOD = 'content'
 
 # Parse database configuration from $DATABASE_URL
-DATABASES['default'] =  dj_database_url.config(default='sqlite:////c:/xampp/htdocs/tech_now/db.sqlite3')
+DATABASES['default'] =  dj_database_url.config(default='sqlite:////c:/xampp/htdocs/tech_now/db.sqlite3',conn_max_age=600)
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
